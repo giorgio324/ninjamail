@@ -143,6 +143,7 @@ ul {
   display: inline-block;
   font-weight: 800;
   border: 3px var(--green) solid;
+  text-transform: uppercase;
 }
 .btn:hover {
   background: var(--white);
@@ -156,11 +157,16 @@ ul {
 .logo-icon {
   display: flex;
   align-items: center;
+  position: relative;
 }
 .logo-icon h2 {
   color: black;
   font-weight: 900;
   font-family: 'Raleway', sans-serif;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(80%, -60%);
 }
 .logo-big {
   display: none;
@@ -172,7 +178,10 @@ ul {
   width: 100%;
 }
 .navbar {
-  padding: 20px 14px;
+  padding-top: 9px;
+  padding-bottom: 11px;
+  padding-left: 0px;
+  padding-right: 13px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -191,7 +200,7 @@ ul {
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
-  row-gap: 8px;
+  row-gap: 3px;
 }
 .link-item a {
   color: black;
@@ -203,15 +212,145 @@ ul {
   background-color: var(--green);
 }
 .navbar-btn {
-  padding: 5px 13px;
+  padding: 3px 13px;
 }
 
 /* end of navbar */
 
+/* hero */
+.hero {
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+.hero-title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+.image-small-text-container {
+  position: relative;
+  margin-bottom: 10px;
+}
+.hero-img-small {
+  box-shadow: var(--shadow-4);
+}
+.hero-img-medium {
+  display: none;
+  box-shadow: var(--shadow-4);
+}
+.hero-img-big {
+  display: none;
+  box-shadow: var(--shadow-4);
+}
+.hero-title {
+  text-align: start;
+  font-weight: 900;
+  line-height: 46px;
+}
+.hero-title-small {
+  position: absolute;
+  top: -25%;
+  z-index: 9;
+  width: 294px;
+}
+.hero-title-standard {
+  display: none;
+}
+
+.hero-info-container {
+  font-weight: 500;
+  font-size: 14px;
+}
+.hero-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  column-gap: 14px;
+}
+.hero-btn {
+  width: 100%;
+}
+.hero-btn-light {
+  background: var(--white);
+  color: var(--green);
+  border: 3px var(--green) solid;
+}
+.small-img-circle,
+.img-rectangle {
+  display: none;
+}
+/* end of hero */
 /* media queryes */
 @media screen and (min-width: 768px) {
   .links-container {
     display: flex;
+  }
+  .hero-title {
+    position: relative;
+  }
+  .img-circle {
+    position: absolute;
+    bottom: -20%;
+    left: 20%;
+  }
+  .img-rectangle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    z-index: -1;
+  }
+  .img-blue-circle {
+    position: absolute;
+    top: 0;
+    left: 35%;
+    z-index: -1;
+    transform: translateY(-50%);
+  }
+  .img-small-rectangle {
+    position: absolute;
+    top: 0;
+    right: 25%;
+    z-index: -1;
+    transform: translateY(-200%);
+  }
+  .hero-title-container {
+    flex-direction: row-reverse;
+  }
+  .hero-title-small,
+  .hero-img-small,
+  .hero-img-big {
+    display: none;
+  }
+
+  .hero-img-medium,
+  .small-img-circle,
+  .img-rectangle {
+    display: block;
+  }
+
+  .hero-title-standard {
+    display: block;
+  }
+  .info {
+    margin-top: 19px;
+    margin-bottom: 28px;
+  }
+  .hero-btn {
+    padding: 11px 18px;
+  }
+  .hero-info-container {
+    font-weight: 500;
+    font-size: 14px;
+    max-width: 380px;
+    margin-right: -120px;
+    position: relative;
+  }
+  .info-container {
+    max-width: 310px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -220,5 +359,37 @@ ul {
   }
   .logo-small {
     display: none;
+  }
+  .hero-img-small {
+    display: none;
+  }
+  .hero-img-medium {
+    display: none;
+  }
+  .hero-img-big {
+    display: block;
+  }
+  .hero-btn {
+    padding: 15px 22px;
+  }
+  .hero-info-container {
+    font-weight: 500;
+    font-size: 14px;
+    max-width: 500px;
+    margin-right: -120px;
+    position: relative;
+  }
+  .info-container {
+    max-width: 450px;
+  }
+  .hero-button-container {
+    column-gap: 45px;
+  }
+  .info {
+    margin-top: 25px;
+    margin-bottom: 35px;
+  }
+  .hero-title {
+    line-height: 71px;
   }
 }
