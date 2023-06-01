@@ -128,29 +128,12 @@ ul {
 }
 
 /* end of global css */
-/* ============= NAVBAR =============== */
 
-/* logo */
-.logo-icon {
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-.logo-icon h2 {
-  color: black;
-  font-weight: 900;
-  font-family: 'Raleway', sans-serif;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translate(80%, -60%);
-}
+/* navbar */
+
 .logo-big {
   display: none;
 }
-/* end of logo */
-
-/* navbar */
 .navbar-container {
   width: 100%;
 }
@@ -278,12 +261,14 @@ ul {
 /* end of video */
 /* media queryes */
 @media screen and (min-width: 768px) {
+  /* navbar */
   .links-container {
     display: flex;
   }
   .navbar {
     padding: 23px 16px 23px 15px;
   }
+  /* end of navbar */
   .hero-title {
     position: relative;
   }
@@ -372,6 +357,7 @@ ul {
   }
 }
 @media screen and (min-width: 1440px) {
+  /* navbar */
   .logo-big {
     display: block;
   }
@@ -384,6 +370,7 @@ ul {
   .navbar-btn {
     font-size: 17px;
   }
+  /* end of navbar */
   .hero-img-small {
     display: none;
   }
