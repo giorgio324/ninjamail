@@ -193,6 +193,7 @@ ul {
 .hero {
   padding-top: 30px;
   padding-bottom: 20px;
+  margin-bottom: 10px;
 }
 .hero-img-big {
   display: block;
@@ -265,14 +266,12 @@ ul {
 /* end of hero */
 /* video */
 .video {
-  background: var(--video-bg);
-  background-size: cover;
-  background-position: center;
-  padding: 1rem 0 7rem 0;
+  background: var(--video-bg) url(images/video/slashBack.svg) no-repeat
+    center/cover;
+  padding: 2.5rem 0;
 }
 .video-container {
-  background: url(images/video/slashBack.svg) no-repeat center center/cover;
-  padding: 2rem 20px;
+  padding: 0 20px;
   position: relative;
   max-width: 944px;
   margin: 0 auto;
@@ -319,7 +318,8 @@ ul {
   /* end of navbar */
   /* hero */
   .hero {
-    padding: 50px 0;
+    padding: 70px 0;
+    margin-bottom: 30px;
   }
   .hero-title {
     position: relative;
@@ -407,6 +407,7 @@ ul {
   }
   /* end of hero */
   /* video */
+
   /* end of viedeo */
 }
 @media screen and (min-width: 1440px) {
@@ -426,7 +427,8 @@ ul {
   /* end of navbar */
   /* hero */
   .hero {
-    padding: 70px 0;
+    padding: 100px 0;
+    margin-bottom: 50px;
   }
   .hero-btn {
     padding: 15px 22px;
