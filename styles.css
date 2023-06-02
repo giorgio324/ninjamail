@@ -407,7 +407,12 @@ ul {
   }
   /* end of hero */
   /* video */
-
+  .video {
+    background: var(--video-bg) url(images/video/slashBack.svg);
+    background-position: left top;
+    background-repeat: no-repeat;
+    padding: 4rem 0;
+  }
   /* end of viedeo */
 }
 @media screen and (min-width: 1440px) {
