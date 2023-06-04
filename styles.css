@@ -317,6 +317,69 @@ ul {
 }
 
 /* end of video */
+
+/* about */
+
+.about {
+  width: 100%;
+  position: relative;
+  margin-top: -200px;
+  padding: 200px 0;
+  background: url(images/about/mobileBg.svg) no-repeat center center/cover;
+}
+.cards-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  padding: 4rem 9px;
+  margin-top: -2rem;
+}
+
+.cards-container > * {
+  justify-self: center;
+}
+
+.cards-container > *:nth-child(1) {
+  justify-self: start;
+}
+
+.cards-container > *:nth-child(2) {
+  justify-self: end;
+}
+.card {
+  width: 70%;
+
+  box-shadow: var(--shadow);
+  background: var(--white);
+}
+.card-info {
+  background: var(--white);
+  padding: 17px 25px 13px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+.card-info a {
+  color: var(--green);
+  font-weight: 500;
+  font-size: 12px;
+}
+.card-end-info {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+.card-end-info h2 {
+  font-size: 28px;
+  font-weight: 900;
+}
+.card-end-info p {
+  padding-right: 40px;
+}
+/* end of about */
+
 /* media queryes */
 @media screen and (min-width: 768px) {
   /* navbar */
@@ -439,6 +502,35 @@ ul {
   }
 
   /* end of viedeo */
+  /* about */
+  .about {
+    background: url(images/about/tabletBg.svg) no-repeat center center/100% auto;
+    margin-top: -240px;
+    padding: 240px 0;
+  }
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 31px;
+    padding: 4rem 40px;
+    margin-top: 5rem;
+  }
+
+  .cards-container > *:nth-child(1) {
+    justify-self: center;
+    transform: translateY(-20%);
+  }
+
+  .cards-container > *:nth-child(2) {
+    justify-self: center;
+  }
+  .card {
+    width: 100%;
+  }
+  .card-end-info {
+    padding: 1rem 0;
+  }
+  /* end of about  */
 }
 @media screen and (min-width: 1440px) {
   /* navbar */
@@ -514,4 +606,31 @@ ul {
     font-size: 21px;
   }
   /* end of viedeo */
+  /* about */
+  .about {
+    background: url(images/about/desktopBg.svg) no-repeat center center/100%
+      auto;
+    margin-top: -325px;
+    padding: 325px 0;
+  }
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 31px;
+    padding: 4rem 170px;
+    margin-top: 5rem;
+  }
+  .card-info {
+    font-size: 16px;
+  }
+  .card-info a {
+    font-size: 16px;
+  }
+  .card-end-info h2 {
+    font-size: 44px;
+  }
+  .card-end-info p {
+    font-size: 19px;
+  }
+  /* end of about */
 }
